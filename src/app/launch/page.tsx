@@ -6,7 +6,7 @@ import { Rocket, Gift, MessageSquare, Percent } from "lucide-react";
 export const metadata: Metadata = {
   title: "Early Access",
   description:
-    "Join the MetrixAI early access program. Be among the first to experience our AI-powered Talent Intelligence Platform.",
+    "Join the MetrixAI early access program. Be among the first to see who's ready, who's at risk, and who's next inside your workforce.",
 };
 
 const benefits = [

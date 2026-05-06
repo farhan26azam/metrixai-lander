@@ -78,9 +78,7 @@ export function LaunchModal({ onClose }: LaunchModalProps) {
                 </h2>
 
                 <p className="text-blue-100 text-base sm:text-lg mb-6 leading-relaxed">
-                  Be among the first to experience our AI-powered Talent Intelligence Platform.
-                  Join our early access program and transform how your organization develops
-                  and retains talent.
+                  Be among the first to experience MetrixAI. Join our early access program and transform how your organization develops and retains talent.
                 </p>
 
                 <p className="text-white/80 text-sm sm:text-base mb-8">

@@ -7,17 +7,17 @@ import { Section } from "@/components/ui";
 const stats = [
   {
     value: "213%",
-    label: "Cost to replace a highly trained employee",
+    label: "The average cost of one unplanned leadership departure",
     source: "Center for American Progress",
   },
   {
     value: "6x",
-    label: "More expensive to hire externally than develop internally",
+    label: "Less expensive to promote from within than hire externally",
     source: "Josh Bersin Research",
   },
   {
     value: "70%",
-    label: "Of employees would stay longer with better development",
+    label: "Of employees would stay longer if they saw a clear path forward",
     source: "LinkedIn Workplace Learning Report",
   },
 ];
@@ -37,12 +37,8 @@ export function Problem() {
             The Challenge
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 px-4">
-            The Hidden Cost of Employee Turnover
+            The Leadership Gap Nobody Sees Coming
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-            Organizations lose millions annually to preventable attrition and
-            missed internal mobility opportunities.
-          </p>
         </motion.div>
       </div>
 
@@ -73,10 +69,9 @@ export function Problem() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4 }}
-        className="text-center text-gray-600 mt-8 sm:mt-12 max-w-2xl mx-auto text-sm sm:text-base px-4"
+        className="text-center text-gray-700 mt-8 sm:mt-12 max-w-2xl mx-auto text-base sm:text-lg font-medium px-4"
       >
-        Traditional HR systems fail to connect employee skills with
-        opportunities. MetrixAI bridges this gap with AI-powered insights.
+        Traditional HR systems track your people. MetrixAI tells you who&apos;s ready.
       </motion.p>
     </Section>
   );

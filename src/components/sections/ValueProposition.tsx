@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { Button } from "@/components/ui";
 
 export function ValueProposition() {
   return (
@@ -38,18 +36,9 @@ export function ValueProposition() {
               forward — with purpose, visibility, and momentum.
             </p>
 
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium mb-8 sm:mb-10">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium">
               This is MetrixAI. Where talent meets transformation.
             </p>
-
-            <Link href="/demo">
-              <Button
-                size="lg"
-                className="w-full sm:w-auto bg-white hover:bg-gray-100 text-blue-700 px-8 sm:px-12 py-4 sm:py-5 text-base sm:text-lg rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
-              >
-                Request a Full Demo
-              </Button>
-            </Link>
           </motion.div>
 
           {/* Right Content - Demo Video */}

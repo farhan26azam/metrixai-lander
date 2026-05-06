@@ -25,12 +25,13 @@ export function CTASection() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Ready to Transform Your{" "}
-            <span className="gradient-text">Talent Strategy</span>?
+            Your Next Leadership Gap Won&apos;t Wait.
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 lg:mb-10 max-w-2xl mx-auto">
-            Join forward-thinking organizations already using MetrixAI to unlock
-            the full potential of their workforce.
+          <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 max-w-2xl mx-auto leading-relaxed">
+            Most companies find out who their high-potential employees are after they&apos;ve already left, or after a seat goes empty at the worst possible time. MetrixAI gives you that clarity now — so every decision about your people is grounded in data, not instinct.
+          </p>
+          <p className="text-base sm:text-lg text-gray-800 font-medium mb-6 sm:mb-8 lg:mb-10 max-w-2xl mx-auto">
+            See what MetrixAI finds inside your workforce in 20 minutes.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -43,7 +44,7 @@ export function CTASection() {
             <a href="mailto:info@metrixai.io" className="w-full sm:w-auto">
               <Button variant="outline" size="lg" className="w-full sm:w-auto">
                 <Mail className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                Contact Sales
+                Talk to Us
               </Button>
             </a>
           </div>

@@ -38,9 +38,7 @@ export function Footer() {
                 <span>MetrixAI</span>
               </Link>
               <p className="text-sm sm:text-base text-gray-400 max-w-sm leading-relaxed">
-                MetrixAI is the first AI-powered Talent Intelligence Platform that
-                brings career pathing, skill mapping, development plans, coaching
-                and succession planning together in one place.
+                MetrixAI helps HR leaders see who is ready, who is at risk, and who is next — so leadership continuity is never left to chance.
               </p>
               <div className="mt-4 sm:mt-6">
                 <a

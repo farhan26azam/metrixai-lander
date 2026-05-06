@@ -15,7 +15,7 @@ const plans = [
       "AI skill mapping",
       "Basic career pathing",
       "Development recommendations",
-      "Standard support",
+      "Onboarding assistance included",
     ],
     cta: "Get Started",
     popular: false,
@@ -67,6 +67,9 @@ export function PricingCards() {
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Choose the plan that fits your organization
+          </p>
+          <p className="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto mt-4">
+            Built for organizations between 200 and 2,500 employees. Enterprise pricing available for larger teams.
           </p>
         </motion.div>
       </div>

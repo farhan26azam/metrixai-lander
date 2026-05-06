@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { Section } from "@/components/ui";
 
 const stats = [
-  { value: "40%", label: "Faster Promotions" },
-  { value: "3x", label: "Internal Mobility" },
-  { value: "25%", label: "Less Turnover" },
-  { value: "5x", label: "Training ROI" },
+  { value: "40%", label: "Faster time-to-promotion for high-potential employees" },
+  { value: "3x", label: "Increase in internal role fills vs. external hires" },
+  { value: "25%", label: "Reduction in regrettable attrition" },
+  { value: "5x", label: "Return on every dollar invested in employee development" },
 ];
 
 export function StatsStrip() {
@@ -26,12 +26,9 @@ export function StatsStrip() {
           transition={{ duration: 0.5 }}
           className="text-center mb-8 sm:mb-12"
         >
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
-            Proven Results
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white max-w-3xl mx-auto">
+            What Changes When You Can See Your Talent Clearly
           </h2>
-          <p className="text-gray-400 text-sm sm:text-base">
-            Results based on customer case studies
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">

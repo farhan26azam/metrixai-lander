@@ -1,9 +1,10 @@
 export { Hero } from "./Hero";
+export { SocialProof } from "./SocialProof";
 export { ValueProposition } from "./ValueProposition";
 export { Problem } from "./Problem";
 export { FeatureSteps } from "./FeatureSteps";
-export { PersonaCards } from "./PersonaCards";
 export { BenefitsGrid } from "./BenefitsGrid";
+export { BridgeLine } from "./BridgeLine";
 export { StatsStrip } from "./StatsStrip";
 export { PricingCards } from "./PricingCards";
 export { CTASection } from "./CTASection";

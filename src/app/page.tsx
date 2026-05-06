@@ -1,10 +1,11 @@
 import {
   Hero,
-  ValueProposition,
+  SocialProof,
   Problem,
   FeatureSteps,
-  PersonaCards,
+  ValueProposition,
   BenefitsGrid,
+  BridgeLine,
   StatsStrip,
   PricingCards,
   CTASection,
@@ -14,11 +15,12 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <ValueProposition />
+      <SocialProof />
       <Problem />
       <FeatureSteps />
+      <ValueProposition />
       <BenefitsGrid />
-      <PersonaCards />
+      <BridgeLine />
       <StatsStrip />
       <PricingCards />
       <CTASection />

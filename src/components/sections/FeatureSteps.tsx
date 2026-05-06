@@ -6,26 +6,26 @@ import { Section } from "@/components/ui";
 
 const steps = [
   {
-    title: "Resume Upload",
-    description: "Import employee profiles and HR data. Our AI processes information across your entire workforce.",
+    title: "Upload Your People Data",
+    description: "Connect your existing HR data in minutes. No complex setup. MetrixAI processes your workforce information and gets to work immediately.",
     icon: Upload,
     color: "blue",
   },
   {
-    title: "AI Skill Analysis",
-    description: "Advanced AI maps skills, identifies gaps, and discovers hidden talents in real-time.",
+    title: "See Every Employee's Real Potential",
+    description: "Our AI maps skills, identifies hidden strengths, and surfaces employees you didn't know were ready — across your entire organization, in real time.",
     icon: Brain,
     color: "violet",
   },
   {
-    title: "Development Plans",
-    description: "Generate tailored learning paths for every employee based on goals and company needs.",
+    title: "Build the Bench Before You Need It",
+    description: "MetrixAI generates personalized growth plans for every employee — aligned to where your organization is going, not just where it's been.",
     icon: Target,
     color: "emerald",
   },
   {
-    title: "Succession Dashboards",
-    description: "Visualize talent pipelines and ensure leadership continuity with predictive analytics.",
+    title: "Fill Roles From Within — Before You Post Externally",
+    description: "See who's ready for what's open, what's coming, and what's next. Walk into every workforce decision with data — not gut feel.",
     icon: BarChart3,
     color: "amber",
   },
@@ -48,12 +48,9 @@ export function FeatureSteps() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            How MetrixAI Works
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 max-w-3xl mx-auto">
+            From Blind Spot to Clear Picture — In Four Steps
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Four powerful steps to transform your talent strategy
-          </p>
         </motion.div>
       </div>
 

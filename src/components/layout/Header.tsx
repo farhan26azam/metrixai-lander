@@ -85,7 +85,7 @@ export function Header() {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-4">
               <Link href="/demo">
-                <Button size="sm">Request Demo</Button>
+                <Button size="sm">Request a Demo</Button>
               </Link>
             </div>
 
@@ -166,7 +166,7 @@ export function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block"
                   >
-                    <Button className="w-full">Request Demo</Button>
+                    <Button className="w-full">Request a Demo</Button>
                   </Link>
                 </div>
               </div>

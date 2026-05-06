@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | MetrixAI",
   },
   description:
-    "MetrixAI is the first AI-powered Talent Intelligence Platform that brings career pathing, skill mapping, development plans, coaching and succession planning together in one place.",
+    "MetrixAI helps HR leaders see who is ready, who is at risk, and who is next — so leadership continuity is never left to chance.",
   keywords: [
     "talent intelligence",
     "AI HR",
@@ -40,23 +40,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://metrixai.io",
     siteName: "MetrixAI",
-    title: "MetrixAI - AI-Powered Talent Intelligence Platform",
+    title: "MetrixAI",
     description:
-      "MetrixAI brings career pathing, skill mapping, development plans, coaching and succession planning together in one place.",
+      "Stop paying to hire people you already have. MetrixAI shows you who's ready — before the next role opens, the next leader leaves, or the next external search begins.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "MetrixAI - Talent Intelligence Platform",
+        alt: "MetrixAI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MetrixAI - AI-Powered Talent Intelligence Platform",
+    title: "MetrixAI",
     description:
-      "MetrixAI brings career pathing, skill mapping, development plans, coaching and succession planning together in one place.",
+      "Stop paying to hire people you already have. MetrixAI shows you who's ready — before the next role opens.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -109,7 +109,7 @@ export default function RootLayout({
               url: "https://metrixai.io",
               logo: "https://metrixai.io/logo.png",
               description:
-                "AI-powered Talent Intelligence Platform for career pathing, skill mapping, and succession planning.",
+                "MetrixAI helps HR leaders see who is ready, who is at risk, and who is next — so leadership continuity is never left to chance.",
               contactPoint: {
                 "@type": "ContactPoint",
                 email: "info@metrixai.io",

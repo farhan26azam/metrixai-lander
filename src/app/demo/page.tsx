@@ -6,7 +6,7 @@ import { CalendlyEmbed } from "./CalendlyEmbed";
 export const metadata: Metadata = {
   title: "Schedule a Demo",
   description:
-    "Book a personalized demo of MetrixAI. See how our AI-powered Talent Intelligence Platform can transform your organization.",
+    "Book a personalized demo of MetrixAI. See who's ready, who's at risk, and who's next inside your workforce — in 20 minutes.",
 };
 
 const features = [

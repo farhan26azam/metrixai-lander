@@ -1,31 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LayoutDashboard, TrendingUp, Sparkles, ShieldCheck } from "lucide-react";
+import { LayoutDashboard, UserCheck, TrendingUp, ShieldCheck } from "lucide-react";
 import { Section } from "@/components/ui";
 
 const benefits = [
   {
-    title: "Unified Talent Dashboard",
-    description: "Single source of truth for all talent data, skills, and development progress.",
+    title: "One View of Your Entire Workforce",
+    description: "Stop piecing together spreadsheets and gut feelings. MetrixAI gives you a single, real-time picture of every employee's skills, readiness, and growth trajectory.",
     icon: LayoutDashboard,
     color: "blue",
   },
   {
-    title: "Strategic Succession Planning",
-    description: "Identify and develop future leaders with AI-powered insights.",
+    title: "Fill Roles From Within — With Confidence",
+    description: "When a role opens up, MetrixAI shows you who inside your organization is ready to move into it — so you spend less on external searches and more on developing the people you already have.",
+    icon: UserCheck,
+    color: "amber",
+  },
+  {
+    title: "Know Who's Next — Before You Need Them",
+    description: "MetrixAI identifies your future leaders today, so you're never caught flat-footed by a departure, a promotion, or a board question about bench strength.",
     icon: TrendingUp,
     color: "violet",
   },
   {
-    title: "AI-Powered Skill Matching",
-    description: "Automatically match employees to opportunities and roles.",
-    icon: Sparkles,
-    color: "amber",
-  },
-  {
-    title: "Enterprise Security & Scale",
-    description: "SOC 2 compliant, SSO integration, built for any size organization.",
+    title: "Enterprise-Grade Security. Ready When You Are.",
+    description: "SOC 2 in progress. SSO integration. Built to scale from 200 to 20,000 employees. Your data is protected. Your team is supported.",
     icon: ShieldCheck,
     color: "emerald",
   },
@@ -48,12 +48,9 @@ export function BenefitsGrid() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Why Choose MetrixAI
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 max-w-3xl mx-auto">
+            Built for the HR Leaders Who Are Done Guessing
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Enterprise-ready platform built for modern talent management
-          </p>
         </motion.div>
       </div>
 
