@@ -25,7 +25,7 @@ const benefits = [
   },
   {
     title: "Enterprise-Grade Security. Ready When You Are.",
-    description: "SOC 2 in progress. SSO integration. Built to scale from 200 to 20,000 employees. Your data is protected. Your team is supported.",
+    description: "SOC 2 in progress. SSO integration. Built to scale from 250 to 20,000 employees. Your data is protected. Your team is supported.",
     icon: ShieldCheck,
     color: "emerald",
   },

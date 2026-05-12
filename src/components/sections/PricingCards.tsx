@@ -5,11 +5,27 @@ import { Check } from "lucide-react";
 import Link from "next/link";
 import { Section, Button, Badge } from "@/components/ui";
 
-const plans = [
+type Plan = {
+  name: string;
+  description: string;
+  price: string;
+  billing?: string;
+  minimum?: string;
+  example?: string;
+  customSubline?: string;
+  features: string[];
+  cta: string;
+  popular: boolean;
+};
+
+const plans: Plan[] = [
   {
     name: "Core",
     description: "Essential talent intelligence for growing teams",
-    price: "Contact Us",
+    price: "$8 per employee / month",
+    billing: "Billed annually — or $10/month billed monthly",
+    minimum: "Minimum 250 employees",
+    example: "A 300-person team pays $2,400/month billed annually",
     features: [
       "Up to 500 employees",
       "AI skill mapping",
@@ -23,7 +39,11 @@ const plans = [
   {
     name: "Growth",
     description: "Advanced features for scaling organizations",
-    price: "Contact Us",
+    price: "$18 per employee / month",
+    billing: "Billed annually — or $20/month billed monthly",
+    minimum: "Up to 2,500 employees",
+    example:
+      "A 500-person team pays $9,000/month billed annually. Volume discounts available for larger teams.",
     features: [
       "Up to 2,500 employees",
       "Everything in Core, plus:",
@@ -37,8 +57,10 @@ const plans = [
   },
   {
     name: "Enterprise",
-    description: "Full platform for large organizations",
-    price: "Custom",
+    description:
+      "For organizations of any size needing dedicated support, custom integrations, or enterprise-grade SLAs — or for teams scaling beyond 2,500 employees.",
+    price: "Custom pricing",
+    customSubline: "Contact us to build the right plan.",
     features: [
       "Unlimited employees",
       "Everything in Growth, plus:",
@@ -69,7 +91,7 @@ export function PricingCards() {
             Choose the plan that fits your organization
           </p>
           <p className="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto mt-4">
-            Built for organizations between 200 and 2,500 employees. Enterprise pricing available for larger teams.
+            Built for organizations between 250 and 2,500 employees. Enterprise options available for any team that needs more.
           </p>
         </motion.div>
       </div>
@@ -107,10 +129,24 @@ export function PricingCards() {
                 <p className="text-gray-600 text-sm">{plan.description}</p>
               </div>
 
-              <div className="mb-4 sm:mb-6">
-                <div className="text-2xl sm:text-3xl font-bold text-gray-900">
+              <div className="mb-4 sm:mb-6 min-h-[140px]">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">
                   {plan.price}
                 </div>
+                {plan.billing && (
+                  <div className="text-sm text-gray-600 mt-1">{plan.billing}</div>
+                )}
+                {plan.minimum && (
+                  <div className="text-xs text-gray-500 mt-1">{plan.minimum}</div>
+                )}
+                {plan.customSubline && (
+                  <div className="text-sm text-gray-600 mt-1">{plan.customSubline}</div>
+                )}
+                {plan.example && (
+                  <p className="text-xs text-gray-500 italic mt-3 leading-relaxed">
+                    {plan.example}
+                  </p>
+                )}
               </div>
 
               <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 flex-grow">
@@ -135,6 +171,16 @@ export function PricingCards() {
           </motion.div>
         ))}
       </div>
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="text-center text-sm sm:text-base text-gray-600 mt-10 sm:mt-12 max-w-3xl mx-auto px-4 leading-relaxed"
+      >
+        Not sure what this looks like for your team? Pricing scales with your employee count — reach out and we&apos;ll build the right plan together.
+      </motion.p>
     </Section>
   );
 }

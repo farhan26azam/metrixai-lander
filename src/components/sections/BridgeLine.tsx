@@ -13,7 +13,7 @@ export function BridgeLine() {
           transition={{ duration: 0.5 }}
           className="text-center text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed"
         >
-          MetrixAI works for organizations between 200 and 2,500 employees who are serious about developing their people and protecting their leadership pipeline.
+          MetrixAI works for organizations between 250 and 2,500 employees who are serious about developing their people and protecting their leadership pipeline.
         </motion.p>
       </div>
     </section>

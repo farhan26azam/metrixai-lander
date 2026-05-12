@@ -6,7 +6,7 @@
   },
   "nav": {
     "links": [
-      { "label": "Features", "href": "/#features" },
+      { "label": "Solutions", "href": "/#features" },
       { "label": "How It Works", "href": "/#how-it-works" },
       { "label": "Pricing", "href": "/pricing" },
       { "label": "About", "href": "/about" }
@@ -85,33 +85,51 @@
       },
       {
         "title": "Enterprise-Grade Security. Ready When You Are.",
-        "description": "SOC 2 in progress. SSO integration. Built to scale from 200 to 20,000 employees. Your data is protected. Your team is supported.",
+        "description": "SOC 2 in progress. SSO integration. Built to scale from 250 to 20,000 employees. Your data is protected. Your team is supported.",
         "icon": "shield-check"
       }
     ]
   },
   "bridge": {
-    "text": "MetrixAI works for organizations between 200 and 2,500 employees who are serious about developing their people and protecting their leadership pipeline."
+    "text": "MetrixAI works for organizations between 250 and 2,500 employees who are serious about developing their people and protecting their leadership pipeline."
   },
   "stats": {
     "headline": "What Changes When You Can See Your Talent Clearly",
     "items": [
-      { "value": "40%", "label": "Faster time-to-promotion for high-potential employees" },
-      { "value": "3x", "label": "Increase in internal role fills vs. external hires" },
-      { "value": "25%", "label": "Reduction in regrettable attrition" },
-      { "value": "5x", "label": "Return on every dollar invested in employee development" }
+      {
+        "value": "2x",
+        "label": "The retention rate at companies that excel at internal mobility vs. those that don't",
+        "source": "LinkedIn Global Talent Trends Report"
+      },
+      {
+        "value": "41%",
+        "label": "Longer employee tenure at companies that hire and develop from within",
+        "source": "LinkedIn Global Talent Trends Report"
+      },
+      {
+        "value": "218%",
+        "label": "Higher income per employee at organizations with structured talent development programs",
+        "source": "Association for Talent Development (ATD)"
+      },
+      {
+        "value": "33%",
+        "label": "More likely to be an industry leader — companies that prioritize internal talent development",
+        "source": "Deloitte 2025 Talent Survey"
+      }
     ]
   },
   "pricing": {
     "headline": "Simple, Transparent Pricing",
     "subheadline": "Choose the plan that fits your organization",
-    "intro": "Built for organizations between 200 and 2,500 employees. Enterprise pricing available for larger teams.",
+    "intro": "Built for organizations between 250 and 2,500 employees. Enterprise options available for any team that needs more.",
     "plans": [
       {
         "name": "Core",
         "description": "Essential talent intelligence for growing teams",
-        "price": "Contact Us",
-        "period": "",
+        "price": "$8 per employee / month",
+        "billing": "Billed annually — or $10/month billed monthly",
+        "minimum": "Minimum 250 employees",
+        "example": "A 300-person team pays $2,400/month billed annually",
         "features": [
           "Up to 500 employees",
           "AI skill mapping",
@@ -126,8 +144,10 @@
       {
         "name": "Growth",
         "description": "Advanced features for scaling organizations",
-        "price": "Contact Us",
-        "period": "",
+        "price": "$18 per employee / month",
+        "billing": "Billed annually — or $20/month billed monthly",
+        "minimum": "Up to 2,500 employees",
+        "example": "A 500-person team pays $9,000/month billed annually. Volume discounts available for larger teams.",
         "features": [
           "Up to 2,500 employees",
           "Everything in Core, plus:",
@@ -142,9 +162,9 @@
       },
       {
         "name": "Enterprise",
-        "description": "Full platform for large organizations",
-        "price": "Custom",
-        "period": "",
+        "description": "For organizations of any size needing dedicated support, custom integrations, or enterprise-grade SLAs — or for teams scaling beyond 2,500 employees.",
+        "price": "Custom pricing",
+        "customSubline": "Contact us to build the right plan.",
         "features": [
           "Unlimited employees",
           "Everything in Growth, plus:",
@@ -157,7 +177,8 @@
         "cta": "Contact Sales",
         "popular": false
       }
-    ]
+    ],
+    "footnote": "Not sure what this looks like for your team? Pricing scales with your employee count — reach out and we'll build the right plan together."
   },
   "launch": {
     "headline": "Be Part of the Launch",
