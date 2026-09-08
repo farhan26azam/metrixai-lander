@@ -12,16 +12,61 @@ vi.mock("next/navigation", () => ({
   useSearchParams: () => new URLSearchParams(),
 }));
 
-// Mock framer-motion
-vi.mock("framer-motion", () => ({
-  motion: {
-    div: ({ children, ...props }: React.PropsWithChildren) => <div {...props}>{children}</div>,
-    section: ({ children, ...props }: React.PropsWithChildren) => <section {...props}>{children}</section>,
-    span: ({ children, ...props }: React.PropsWithChildren) => <span {...props}>{children}</span>,
-    p: ({ children, ...props }: React.PropsWithChildren) => <p {...props}>{children}</p>,
-  },
-  AnimatePresence: ({ children }: React.PropsWithChildren) => <>{children}</>,
-}));
+// Mock framer-motion.
+// Animation-only props are dropped rather than forwarded, otherwise React warns
+// about unknown DOM attributes (e.g. initial={false}) on every rendered element.
+const MOTION_PROPS = [
+  "initial",
+  "animate",
+  "exit",
+  "transition",
+  "variants",
+  "whileInView",
+  "whileHover",
+  "whileTap",
+  "whileFocus",
+  "whileDrag",
+  "viewport",
+  "layout",
+  "layoutId",
+  "drag",
+  "onAnimationStart",
+  "onAnimationComplete",
+];
+
+function stripMotionProps(props: Record<string, unknown>) {
+  const rest: Record<string, unknown> = {};
+  for (const key of Object.keys(props)) {
+    if (!MOTION_PROPS.includes(key)) rest[key] = props[key];
+  }
+  return rest;
+}
+
+vi.mock("framer-motion", () => {
+  const motionElement = (Tag: keyof React.JSX.IntrinsicElements) => {
+    const MotionMock = ({
+      children,
+      ...props
+    }: React.PropsWithChildren<Record<string, unknown>>) => {
+      const Component = Tag as React.ElementType;
+      return <Component {...stripMotionProps(props)}>{children}</Component>;
+    };
+    MotionMock.displayName = `motion.${Tag}`;
+    return MotionMock;
+  };
+
+  return {
+    motion: {
+      div: motionElement("div"),
+      section: motionElement("section"),
+      span: motionElement("span"),
+      p: motionElement("p"),
+      figure: motionElement("figure"),
+      li: motionElement("li"),
+    },
+    AnimatePresence: ({ children }: React.PropsWithChildren) => <>{children}</>,
+  };
+});
 
 // Mock IntersectionObserver
 class MockIntersectionObserver {
