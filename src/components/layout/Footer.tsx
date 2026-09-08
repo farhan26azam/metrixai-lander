@@ -6,6 +6,7 @@ const footerLinks = {
     { label: "Features", href: "/#features" },
     { label: "Pricing", href: "/pricing" },
     { label: "Demo", href: "/demo" },
+    { label: "Beta Program", href: "/beta" },
   ],
   company: [
     { label: "About", href: "/about" },
