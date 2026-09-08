@@ -11,3 +11,4 @@ export { CTASection } from "./CTASection";
 export { CalendlyModal } from "./CalendlyModal";
 export { EarlyAccessForm } from "./EarlyAccessForm";
 export { LaunchModal } from "./LaunchModal";
+export { BetaApplicationForm } from "./beta/BetaApplicationForm";
