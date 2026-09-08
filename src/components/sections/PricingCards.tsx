@@ -41,11 +41,11 @@ const plans: Plan[] = [
     description: "Advanced features for scaling organizations",
     price: "$18 per employee / month",
     billing: "Billed annually — or $20/month billed monthly",
-    minimum: "Up to 2,500 employees",
+    minimum: "Up to 3,000 employees",
     example:
       "A 500-person team pays $9,000/month billed annually. Volume discounts available for larger teams.",
     features: [
-      "Up to 2,500 employees",
+      "Up to 3,000 employees",
       "Everything in Core, plus:",
       "Advanced succession planning",
       "Custom skill taxonomies",
@@ -58,7 +58,7 @@ const plans: Plan[] = [
   {
     name: "Enterprise",
     description:
-      "For organizations of any size needing dedicated support, custom integrations, or enterprise-grade SLAs — or for teams scaling beyond 2,500 employees.",
+      "For organizations of any size needing dedicated support, custom integrations, or enterprise-grade SLAs — or for teams scaling beyond 3,000 employees.",
     price: "Custom pricing",
     customSubline: "Contact us to build the right plan.",
     features: [
@@ -91,7 +91,7 @@ export function PricingCards() {
             Choose the plan that fits your organization
           </p>
           <p className="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto mt-4">
-            Built for organizations between 250 and 2,500 employees. Enterprise options available for any team that needs more.
+            Built for organizations between 250 and 3,000 employees. Enterprise options available for any team that needs more.
           </p>
         </motion.div>
       </div>
