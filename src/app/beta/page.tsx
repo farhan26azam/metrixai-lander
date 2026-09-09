@@ -65,7 +65,7 @@ export default function BetaPage() {
           <div className="mx-auto max-w-2xl space-y-5 text-base leading-relaxed text-gray-600 sm:text-lg">
             <p>
               MetrixAI is a workforce intelligence platform built for growing
-              organizations between 150 and 3,000 employees. We give HR leaders,
+              organizations between 250 and 3,000 employees. We give HR leaders,
               managers, and executives real-time visibility into the skills,
               career paths, and development needs of their people — so you can
               promote from within, build succession plans with confidence, and
