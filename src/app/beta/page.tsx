@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Section, Container } from "@/components/ui";
 import { BetaApplicationForm } from "@/components/sections";
-import { Rocket, KeyRound, LifeBuoy, Route, Tag } from "lucide-react";
+import { Rocket, KeyRound, LifeBuoy, Route, Tag, Handshake } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Beta Program",
@@ -14,25 +14,25 @@ const perks = [
     icon: KeyRound,
     title: "Full Platform Access",
     description:
-      "Complete access to MetrixAI for your organization throughout the beta program.",
+      "Your entire organization gets access to MetrixAI from day one — the employee view, the manager and HR view, and the executive dashboard. No sandboxed version, no limited features.",
   },
   {
     icon: LifeBuoy,
     title: "Dedicated Onboarding",
     description:
-      "Hands-on setup and support from the MetrixAI team so you are running quickly.",
+      "We handle the setup. Whether you are connecting via API integration or CSV import, we get your data in and your team oriented quickly so you are seeing real insights within days, not months.",
   },
   {
     icon: Route,
     title: "Input Into the Roadmap",
     description:
-      "Direct influence over what we build next, based on what your team actually needs.",
+      "What you experience during the beta shapes what we build next. Your feedback is not collected and filed — it goes directly into product decisions.",
   },
   {
     icon: Tag,
     title: "Preferred Founding Pricing",
     description:
-      "Beta partners who complete the program receive preferred founding pricing when they convert to a paid subscription.",
+      "Beta partners who complete the program lock in founding partner pricing for life when they convert to a paid subscription. Details are shared during your introductory call.",
   },
 ];
 
@@ -93,10 +93,8 @@ export default function BetaPage() {
             What You Get as a Founding Beta Partner
           </h2>
           <p className="text-base leading-relaxed text-gray-600 sm:text-lg">
-            As a MetrixAI founding beta partner you will receive full access to
-            the platform for your organization, dedicated onboarding support, and
-            direct input into the product roadmap. In exchange we ask for active
-            use of the platform and honest feedback throughout the program.
+            The MetrixAI beta program is a working partnership, not a free trial.
+            Here is what that means.
           </p>
         </div>
 
@@ -120,6 +118,21 @@ export default function BetaPage() {
               </div>
             );
           })}
+        </div>
+
+        <div className="mx-auto mt-6 max-w-5xl rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
+          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
+            <Handshake className="h-6 w-6 text-violet-600" />
+          </div>
+          <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
+            What We Ask of You
+          </h3>
+          <p className="text-sm leading-relaxed text-gray-600 sm:text-base">
+            Active use of the platform throughout the program, honest feedback —
+            including what is not working — and a willingness to share your
+            experience in the form of a case study or reference call once the
+            program is complete.
+          </p>
         </div>
 
         <div className="mx-auto mt-10 max-w-3xl space-y-4 rounded-2xl border border-amber-200 bg-amber-50 p-6 sm:p-8">
